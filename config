@@ -194,12 +194,13 @@ smart_borders on
 bar {
 	position top
         status_command i3status
+        height 20
 }
 
 
 for_window [class="^.*"] border pixel 3
 
-exec --no-startup-id "./change_wallpaper.sh"
+exec --no-startup-id ~/.config/i3/change_wallpaper.sh
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
